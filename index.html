@@ -3,63 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Nicolás Álvarez Ortega</title>
+    <title>Nicolás Álvarez Ortega - Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Nicolás Álvarez Ortega</h1>
-        <p>Estudiante de Ciencia de Datos | Resolutor de Problemas | Entusiasta de la Programación</p>
+        <div class="profile">
+            <img src="micara.jpg" alt="Nicolás Álvarez Ortega" class="profile-img">
+            <div>
+                <h1>Nicolás Álvarez Ortega</h1>
+                <p>Estudiante de Ciencia de Datos | Resolutor de Problemas | Entusiasta de la Programación</p>
+            </div>
+        </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#" data-section="about">Sobre Mí</a></li>
+            <li><a href="#" data-section="skills">Habilidades</a></li>
+            <li><a href="#" data-section="education">Educación</a></li>
+            <li><a href="#" data-section="projects">GitHub</a></li>
+            <li><a href="#" data-section="hobbies">Hobbies</a></li>
+            <li><a href="#" data-section="contact">Contacto</a></li>
+        </ul>
+    </nav>
     <main>
-        <section id="about">
+        <section id="about" class="hidden">
             <h2>Sobre Mí</h2>
             <p>
-                Soy estudiante de Ciencia de Datos en el Instituto Tecnológico Autónomo de México,
-                apasionado por resolver problemas complejos utilizando datos. Con experiencia en R, Python, Java, HTML, SQL y CSS,
-                disfruto enfrentar desafíos y crear soluciones innovadoras. Mi objetivo es impactar positivamente a la sociedad a través de la ciencia de datos.
+
             </p>
+            <p>
+                Soy estudiante de Ciencia de Datos en el Instituto Tecnológico Autónomo de México, apasionado por resolver problemas complejos utilizando datos.
+                Mi interés principal radica en el uso de técnicas avanzadas de análisis para encontrar patrones ocultos y generar soluciones prácticas 
+                que beneficien a diversas industrias.
+            </p>
+            <p>
+                Poseo una sólida base en programación, lo que me ha permitido desarrollar proyectos innovadores en lenguajes como R, Python, Java, HTML y SQL.
+                Además, disfruto compartir conocimiento a través de la enseñanza y colaborar con otros para alcanzar metas comunes. Creo firmemente que el trabajo 
+                en equipo y la interdisciplinariedad son esenciales para obtener resultados sobresalientes.
+            </p>
+            <p>
+                Mi objetivo es continuar creciendo tanto personal como profesionalmente en el campo de la Ciencia de Datos, contribuyendo con mis habilidades 
+                para generar un impacto positivo en la sociedad. Siempre busco aprender algo nuevo y enfrentar desafíos que me permitan seguir mejorando.
+            </p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
         </section>
-        <section id="skills">
+        <section id="skills" class="hidden">
             <h2>Habilidades</h2>
             <ul>
-                <li>Liderazgo y oratoria</li>
-                <li>Dominio de R, Python, Java, HTML, SQL y CSS</li>
+                <li>Oratoria y hablar en publico</li>
+                <li>Conocimiento de R, Python, Java, HTML y SQL</li>
                 <li>Resolución de problemas y trabajo en equipo</li>
-                <li>Colaboración interdisciplinaria</li>
+                <li>Colaboración interdisciplinar</li>
+                <li>Diseño y desarrollo de algoritmos de aprendizaje automático</li>
             </ul>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
         </section>
-        <section id="education">
+        <section id="education" class="hidden">
             <h2>Educación</h2>
             <p><strong>Instituto Tecnológico Autónomo de México</strong> (2022 - Actualidad)</p>
             <p><strong>Instituto Oxford México</strong> (Primaria a Preparatoria)</p>
-            <p><strong>St Edmunds College, Ware</strong> (2018 - 2019)</p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
         </section>
-        <section id="projects">
-            <h2>Proyectos de Programación</h2>
-            <ul>
-                <li><a href="https://github.com/Nike2004A" target="_blank">Link a mi github para saber más</a></li>
-            </ul>
+        <section id="projects" class="hidden">
+            <h2>Proyectos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="GitHub-Emblem.png" alt="Proyecto 1" height="50" width="100">
+                    <figcaption><a href="https://github.com/Nike2004A/" target="_blank">Link a mi GitHub</a></figcaption>
+                </figure>
+            </div>
+            <p>
+                En mi repositorio de GitHub, encontrarás los proyectos que he llevado a cabo en el tiempo que llevo en el ITAM.
+            </p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
         </section>
-        <section id="hobbies">
+        <section id="hobbies" class="hidden">
             <h2>Hobbies</h2>
             <ul>
-                <li>Jugar golf</li>
-                <li>Jugar videojuegos</li>
-                <li>Ir a conciertos</li>
-                <li>Salir con mis amigos y relacionarme con demás gente</li>
-                <li>Leer libros de filosofia</li>
-                <li>Viajar y conocer nuevas culturas</li>
+                <li><a href="#" data-hobby="golf">Jugar golf</a></li>
+                <li><a href="#" data-hobby="videojuegos">Jugar videojuegos</a></li>
+                <li><a href="#" data-hobby="conciertos">Ir a conciertos</a></li>
+                <li><a href="#" data-hobby="socializar">Salir con mis amigos</a></li>
+                <li><a href="#" data-hobby="filosofia">Leer libros de filosofía</a></li>
+                <li><a href="#" data-hobby="viajar">Viajar y conocer nuevas culturas</a></li>
             </ul>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
         </section>
-        <section id="contact">
+        
+        <section id="hobby-golf" class="hidden">
+            <h2>Jugar Golf</h2>
+            <p>Jugar golf es para mí una manera de desarrollar disciplina, enfoque y estrategia. Disfruto practicar en campos locales y competir con amigos para mejorar mi técnica.</p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
+        </section>
+        
+        <section id="hobby-videojuegos" class="hidden">
+            <h2>Jugar Videojuegos</h2>
+            <p>Los videojuegos son una manera de explorar mundos virtuales, desarrollar estrategias y trabajar en equipo. Algunos de mis favoritos son aquellos que combinan creatividad y desafío, como juegos de rol y estrategia.</p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
+        </section>
+        
+        <section id="hobby-conciertos" class="hidden">
+            <h2>Ir a Conciertos</h2>
+            <p>Asistir a conciertos me permite conectar con la música en vivo y disfrutar de la energía que transmite un público apasionado. La música en directo es una de mis mayores inspiraciones.</p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
+        </section>
+        
+        <section id="hobby-socializar" class="hidden">
+            <h2>Socializar</h2>
+            <p>Salir con amigos y conocer nuevas personas es una parte esencial de mi vida. Me ayuda a ampliar perspectivas, compartir experiencias y fortalecer relaciones.</p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
+        </section>
+        
+        <section id="hobby-filosofia" class="hidden">
+            <h2>Leer Libros de Filosofía</h2>
+            <p>La filosofía me ayuda a reflexionar sobre temas fundamentales como la ética, la existencia y la sociedad. Algunos de mis autores favoritos incluyen Nietzsche y Camus.</p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
+        </section>
+        
+        <section id="hobby-viajar" class="hidden">
+            <h2>Viajar</h2>
+            <p>Viajar me permite explorar nuevas culturas, probar gastronomías únicas y aprender sobre la historia de cada lugar que visito. Siempre busco destinos que ofrezcan una experiencia auténtica.</p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
+        </section>
+        
+        <section id="contact" class="hidden">
             <h2>Contacto</h2>
-            <p><strong>Teléfono:</strong> +52 55 2730 0706</p>
             <p><strong>Email:</strong> <a href="mailto:nalvarezo62@gmail.com">nalvarezo62@gmail.com</a></p>
+            <button class="back-btn" data-back="nav">Volver al Menú</button>
         </section>
     </main>
-    <footer>
-        <p>© 2024 Nicolás Álvarez Ortega | Todos los derechos reservados</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
